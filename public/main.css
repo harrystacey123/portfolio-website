@@ -488,6 +488,18 @@ footer p {
         width: 475px;
     }
 
+    .name {
+        font-size: 40px;
+    }
+
+    .full-stack {
+        font-size: 25px;
+    }
+
+    /* header {
+        background-image: url('./images/london3.jpeg');
+    } */
+
 }
 
 @media only screen and (max-width: 570px) {
