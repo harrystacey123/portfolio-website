@@ -53,10 +53,19 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         var scrollTop = $(window).scrollTop();
-        if (scrollTop >= 780) {
+        if (scrollTop >= 720) {
         $(`.nav-list-item`).addClass(`yellownav`);
         } else { 
         $(`.nav-list-item`).removeClass(`yellownav`);
+        }
+    })
+
+    $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop >= 720) {
+        $(`.name-and-hamburger`).addClass(`yellowbar`);
+        } else { 
+        $(`.name-and-hamburger`).removeClass(`yellowbar`);
         }
     })
 
@@ -66,6 +75,29 @@ $(document).ready(function() {
         $(`body, html`).animate({
             scrollTop: $(this.hash).offset().top
         }, 1000)
+    })
+
+    $('.cross').hide();
+    $('.hamburger-ul').hide();
+    $('.hamburger').on('click', function() {
+        $('.hamburger-ul').slideToggle('slow', function() {
+            $('.hamburger').hide();
+            $('.cross').show();
+        });
+    });
+
+    $('.cross').on('click', function() {
+        $('.hamburger-ul').slideToggle('slow', function() {
+            $('.cross').hide();
+            $('.hamburger').show();
+        });
+    });
+
+    $('.hamburger-about, .hamburger-skills, .hamburger-projects, .hamburger-contact').on('click', function() {
+        $('.hamburger-ul').slideToggle('slow', function() {
+            $('.hamburger').show();
+            $('.cross').hide()
+        })
     })
 
 });

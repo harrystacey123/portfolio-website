@@ -12,6 +12,7 @@ header {
     background-image: url('./images/london2.jpeg');
     height: 750px;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 body {
@@ -23,12 +24,33 @@ body {
     justify-content: flex-end;
 }
 
+.harry-stacey {
+    position: absolute;
+    visibility: hidden;
+    padding-left: 10px;
+}
 
+.hamburger {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    right: 10px;
+    height: 80px;
+}
+
+.cross {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 10px;
+    height: 80px;
+}
 
 .nav-list {
     margin: 0;
     display: flex;
     position: fixed;
+    z-index: 10;
 }
 
 .about {
@@ -37,9 +59,14 @@ body {
 
 .nav-list-item {
     padding: 20px 70px;
-    background:rgba(255,255,255, 0.5);
+    background:rgb(118, 115, 255);
     font-size: 20px;
     color: black;
+}
+
+.nav-list-item:hover {
+    background:rgb(145, 143, 255);
+    transition: 1s;
 }
 
 .yellownav {
@@ -47,9 +74,8 @@ body {
     opacity: 1;
 }
 
-.nav-list-item:hover {
-    opacity: 0.5;
-    transition: 1s;
+.yellownav:hover {
+    background: rgba(255, 231, 136, 1);
 }
 
 .outer-header-div {
@@ -87,7 +113,11 @@ main {
 
 h3 {
     text-decoration: underline;
+    -moz-text-decoration: underline;
+    -webkit-text-decoration: underline;
     text-decoration-color: #FBD334;
+    -webkit-text-decoration-color: #FBD334;
+    -moz-text-decoration-color: #FBD334;
     font-size: 50px;
 }
 
@@ -115,7 +145,7 @@ h3 {
 }
 
 .column-2 {
-    margin: 0 24px;
+    margin: 0 0 0 24px;
     text-align: justify;
     line-height: 1.5;
     font-size: 18px;
@@ -137,13 +167,23 @@ h3 {
 
 .skills-div {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.technologies-and-methodologies {
+    display: flex;
+    flex-direction: row;
+}
+
+.tools-and-soft-skills {
+    display: flex;
+    flex-direction: row;
 }
 
 .skills {
     background-color: #FBD334;
     padding: 10px;
-    /* border-radius: 15px; */
     -webkit-box-shadow: 0px 0px 40px -11px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 40px -11px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 40px -11px rgba(0,0,0,0.75);
@@ -210,6 +250,10 @@ h4 {
 
 #page1, #page2, #page3, #page4 {
     display: flex;
+}
+
+#projects ul {
+    padding-left: 0;
 }
 
 .project-description {
@@ -282,4 +326,183 @@ footer p {
     text-align: center;
     line-height: 100px;
     font-family: 'Lato', sans-serif;
+}
+
+.hamburger-menu {
+    width: 100%;
+    z-index: 12;
+    position: absolute;
+    text-align: center;
+    top: 80px;
+    background-color: black;
+    font-size: 25px;
+}
+
+.hamburger-ul {
+    padding-left: 0;
+}
+
+.hamburger-menu li {
+    padding: 20px 0;
+    color: black;
+    background:rgba(255, 255, 255, 1);
+    margin: 2px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    main {
+        margin: 70px 50px;
+    }
+
+    .portfolioimg {
+        height: 250px;
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .about-div {
+        display: block;
+    }
+
+    .about-separator {
+        display: none;
+    }
+
+    .column-1, .column-2 {
+        margin: 20px 0;
+    }
+
+    .img-div {
+        display: flex;
+        justify-content: center;
+    }
+
+    h3 {
+        margin-top: 80px;
+    }
+
+    .skills-div {
+        display: block;
+    }
+
+    .technologies-and-methodologies, .tools-and-soft-skills {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 100px;
+    }
+
+    .page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-screenshot {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 865px) {
+    .nav-list {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .about {
+        border-radius: 0px;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    .nav-list {
+        display: none;
+    }
+
+    .name-and-hamburger {
+        background:rgb(118, 115, 255);
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .yellowbar {
+        background: #FBD334;
+    }
+
+    .harry-stacey {
+        visibility: visible;
+        z-index: 3;
+        position: fixed;
+    }
+
+    .hamburger {
+        visibility: visible;
+        z-index: 3;
+        float: right;
+    }
+
+    .cross {
+        display: block;
+        z-index: 3;
+        float: right;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .technologies-and-methodologies {
+        flex-direction: column;
+    }
+
+    .tools-and-soft-skills {
+        flex-direction: column;
+    }
+
+    .tech-ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .technologies-div {
+        margin-bottom: 30px;
+    }
+    .technologies-div, .soft-skills-div, .tools-div {
+        margin: 0 0 100px 0;
+    }
+
+    .methodologies-div {
+        margin: 0;
+    }
+
+    .portfolioimg {
+        width: 475px;
+    }
+
+}
+
+@media only screen and (max-width: 570px) {
+    .portfolioimg {
+        width: 350px;
+        height: 191px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+
+    main {
+        margin: 70px 25px;
+    }
+    .title {
+        font-size: 20px;
+    }
 }

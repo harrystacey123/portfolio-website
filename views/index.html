@@ -5,13 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Harry Stacey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="public/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="icon" href="./images/favicon.jpeg">
+    <link rel="icon" href="../public/images/favicon.jpeg">
 </head>
 <body>
     <header>
+        <div class="name-and-hamburger">
+            <h1 class="harry-stacey">Harry Stacey</h1>
+            <a href="#"><img class="hamburger" src="https://img.icons8.com/ios/100/000000/menu-filled.png"></a>
+            <a><img class="cross" src="https://img.icons8.com/ios/100/000000/delete-sign.png"></a>
+            <div class="hamburger-menu">
+                <ul class="hamburger-ul">
+                    <a class="scroll hamburger-about" href="#about"><li>About</li></a>
+                    <a class="scroll hamburger-skills" href="#skills"><li>Skills</li></a>
+                    <a class="scroll hamburger-projects" href="#projects"><li>Projects</li></a>
+                    <a class="scroll hamburger-contact" href="#contact"><li>Contact</li></a>
+                </ul>
+            </div>
+        </div>
         <nav class="navigation">
             <ul class="nav-list">
                 <a class="scroll" href="#about"><li class="nav-list-item about">About</li></a>
@@ -31,65 +44,72 @@
     <main>
         <h3 id="about" class="about-harry">About Harry</h3>
         <div class="about-div">
-            <img class="harry-headshot" src="./images/harry-headshot.png" alt="">
+            <div class="img-div">
+                <img class="harry-headshot" src="../public/images/harry-headshot.png" alt="">
+            </div>
             <p class="column-1">I am a full-stack web developer based in London with an undergraduate degree in Management. I have a passion for computers, problem solving and all things tech. I have an eager attitude with every application I build, paying close attention to detail. Additionally, I am a big advocate for collaboration – teamwork at university was crucial to success and I have definitely brought this idea forward in the way I code.</p>
             <div class="about-separator"></div>
             <p class="column-2">I recently graduated from General Assembly, a full-time web development course in San Francisco, USA, learning HTML, CSS and JavaScript, as well as frameworks and libraries including Node.js, React.js, and Django. I have returned to London and am seeking exciting career opportunities, with a preference for front-end roles.</p>
         </div>
         <h3 id="skills">Skills</h3>
         <div class="skills-div">
-            <div class="skills technologies-div">
-                <h4>Technologies</h4>
-                <ul class="tech-ul">
-                    <div>
-                        <li>HTML</li>
-                        <li>JavaScript</li>
-                        <li>Mongoose</li>
-                        <li>jQuery</li>
-                        <li>EJS</li>
-                        <li>MongoDB</li>
-                    </div>
-                    <div>
-                        <li>CSS/SASS</li>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>Python</li>
-                        <li>Django</li>
-                        <li>Multer</li>
-                    </div>
-                </ul>
+            <div class="technologies-and-methodologies">
+                <div class="skills technologies-div">
+                    <h4>Technologies</h4>
+                    <ul class="tech-ul">
+                        <div>
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+                            <li>REACT.js</li>
+                            <li>Mongoose</li>
+                            <li>Node.js</li>
+                            <li>EJS</li>
+                            <li>MongoDB</li>
+                        </div>
+                        <div>
+                            <li>CSS/SASS</li>
+                            <li>jQuery</li>
+                            <li>Express.js</li>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>Multer</li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="skills methodologies-div">
+                    <h4>Methodologies</h4>
+                    <ul>
+                        <li>RESTful APIs</li>
+                        <li>Responsive web pages</li>
+                        <li>Trello</li>
+                        <li>CRUD functionality</li>
+                        <li>Flexbox</li>
+                        <li>Pair programming</li>
+                    </ul>
+                </div>
             </div>
-            <div class="skills methodologies-div">
-                <h4>Methodologies</h4>
-                <ul>
-                    <li>RESTful APIs</li>
-                    <li>Responsive web pages</li>
-                    <li>Trello</li>
-                    <li>CRUD functionality</li>
-                    <li>Flexbox</li>
-                    <li>Pair programming</li>
-                </ul>
-            </div>
-            <div class="skills tools-div">
-                <h4>Tools</h4>
-                <ul>
-                    <li>Slack</li>
-                    <li>Postman/Insomnia</li>
-                    <li>Github</li>
-                    <li>Git</li>
-                    <li>Heroku</li>
-                    <li>NPM</li>
-                </ul>
-            </div>
-            <div class="skills soft-skills-div">
-                <h4>Soft Skills</h4>
-                <ul>
-                    <li>Daily Standups</li>
-                    <li>Presentations</li>
-                    <li>Management Theory</li>
-                    <li>Collaboration</li>
-                    <li>Touch typing</li>
-                </ul>
+            <div class="tools-and-soft-skills">
+                <div class="skills tools-div">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li>Slack</li>
+                        <li>Postman/Insomnia</li>
+                        <li>Github</li>
+                        <li>Git</li>
+                        <li>Heroku</li>
+                        <li>NPM</li>
+                    </ul>
+                </div>
+                <div class="skills soft-skills-div">
+                    <h4>Soft Skills</h4>
+                    <ul>
+                        <li>Daily Standups</li>
+                        <li>Presentations</li>
+                        <li>Management Theory</li>
+                        <li>Collaboration</li>
+                        <li>Touch typing</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div id="projects">
@@ -97,7 +117,9 @@
             <ul>
                 <li id="title1" class="title portfolio">ClueForYou</li>
                 <li id="page1" class="page portfolio">
-                    <img class="portfolioimg" src="./images/clueforyou.jpeg" alt="">
+                    <div class="project-screenshot">
+                        <img class="portfolioimg" src="../public/images/clueforyou.jpeg" alt="">
+                    </div>
                     <div>
                         <h5>Individual, 2 weeks</h5>
                         <p class="project-description">Technologies: HTML, CSS, jQuery, Node.js, Multer, and EJS.</p>
@@ -112,7 +134,9 @@
                 </li>
                 <li id="title2" class="title portfolio">Wayfarer - Click to expand</li>
                 <li id="page2" class="page portfolio">
-                    <img class="portfolioimg" src="./images/wayfarer.jpeg" alt="">
+                    <div class="project-screenshot">
+                        <img class="portfolioimg" src="../public/images/wayfarer.jpeg" alt="">
+                    </div>
                     <div>
                         <h5>Group of three, 1 week</h5>
                         <p class="project-description">Technologies: React.js, HTML, CSS, Node.js, and Multer.</p>
@@ -120,14 +144,16 @@
                             <br>
                             <br>
                         <div class="button-div">
-                                <a href="https://github.com/bmanandhar/project-wayfarer"><button class="github-button button">Github</button></a>
-                                <a href="https://react-wayfarer-front.herokuapp.com/"><button class="heroku-button button">Heroku</button></a>
+                            <a href="https://github.com/bmanandhar/project-wayfarer"><button class="github-button button">Github</button></a>
+                            <a href="https://react-wayfarer-front.herokuapp.com/"><button class="heroku-button button">Heroku</button></a>
                         </div>
                     </div>
                 </li>
                 <li id="title3" class="title portfolio">Learnify - Click to expand</li>
-                <li id="page3" class="portfolio">
-                    <img class="portfolioimg" src="./images/learnify.jpeg" alt="">
+                <li id="page3" class="page portfolio">
+                    <div class="project-screenshot">
+                        <img class="portfolioimg" src="../public/images/learnify.jpeg" alt="">
+                    </div>
                     <div>
                         <h5>Group of three, 1 week</h5>
                         <p class="project-description">Technologies: HTML, CSS, Jquery, Django, Stripe, Pillow, and Psycopg2.</p>
@@ -141,8 +167,10 @@
                     </div>
                 </li>
                 <li id="title4" class="title portfolio">BettingWeb - Click to expand</li>
-                <li id="page4" class="portfolio">
-                    <img class="portfolioimg" src="./images/bettingweb.jpeg" alt="">
+                <li id="page4" class="page portfolio">
+                    <div class="project-screenshot">
+                        <img class="portfolioimg" src="../public/images/bettingweb.jpeg" alt="">
+                    </div>
                     <div>
                         <h5>Group of two, 1 week</h5>
                         <p class="project-description">Technologies: HTML, CSS, Jquery, Django, Stripe, Pillow, and Psycopg2.</p>
@@ -180,7 +208,7 @@
     </footer>
 </body>
 <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
-<script src="main.js"></script>
+<script src="../public/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script src="./parallax.min.js"></script>
+<script src="../parallax.min.js"></script>
 </html>
