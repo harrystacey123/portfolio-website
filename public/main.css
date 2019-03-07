@@ -429,7 +429,7 @@ footer p {
     }
 
     .name-and-hamburger {
-        background-color: #9E9CA9;
+        background-color: #8984FC;
         width: 100%;
         height: 80px;
         position: fixed;
@@ -508,8 +508,16 @@ footer p {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        height: 100%;
+        width: 100%;
         overflow: hidden;
+    }
+    .header-div {
+        width: 250px;
+        top: 500px;
+    }
+
+    .name-and-hamburger {
+        background-color: #9E9CA9;
     }
 
 }
@@ -528,10 +536,5 @@ footer p {
     }
     .title {
         font-size: 20px;
-    }
-
-    .header-div {
-        width: 250px;
-        top: 500px;
     }
 }
