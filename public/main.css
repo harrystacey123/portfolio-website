@@ -33,9 +33,9 @@ body {
 .hamburger {
     position: absolute;
     visibility: hidden;
-    top: 0;
-    right: 10px;
-    height: 80px;
+    right: 0;
+    height: 50px;
+    margin: 15px;
 }
 
 .cross {
@@ -443,6 +443,11 @@ footer p {
         visibility: visible;
         z-index: 3;
         position: fixed;
+        line-height: 40px;
+    }
+
+    .name-and-hamburger-div {
+        display: flex;
     }
 
     .hamburger {
@@ -489,16 +494,16 @@ footer p {
     }
 
     .name {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .full-stack {
-        font-size: 25px;
+        font-size: 20px;
     }
 
-    /* header {
+    header {
         background-image: url('./images/london3.jpeg');
-    } */
+    }
 
 }
 
@@ -508,7 +513,7 @@ footer p {
         height: 191px;
     }
     h3 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     main {
@@ -516,5 +521,10 @@ footer p {
     }
     .title {
         font-size: 20px;
+    }
+
+    .header-div {
+        width: 250px;
+        top: 500px;
     }
 }
