@@ -42,8 +42,9 @@ body {
     position: absolute;
     display: none;
     top: 0;
-    right: 10px;
-    height: 80px;
+    right: 0px;
+    height: 50px;
+    margin: 15px;
 }
 
 .nav-list {
@@ -428,7 +429,7 @@ footer p {
     }
 
     .name-and-hamburger {
-        background:rgb(118, 115, 255);
+        background-color: #9E9CA9;
         width: 100%;
         height: 80px;
         position: fixed;
