@@ -521,6 +521,10 @@ footer p {
         background-color: #9E9CA9;
     }
 
+    .contact p {
+        font-size: 14px;
+    }
+
 }
 
 @media only screen and (max-width: 570px) {
