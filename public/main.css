@@ -28,6 +28,7 @@ body {
     position: absolute;
     visibility: hidden;
     padding-left: 10px;
+    color: red;
 }
 
 .hamburger {
@@ -508,7 +509,7 @@ footer p {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        width: 100%;
+        width: 600px;
         overflow: hidden;
     }
     .header-div {
