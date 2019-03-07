@@ -28,6 +28,7 @@ body {
     position: absolute;
     visibility: hidden;
     padding-left: 10px;
+    color: blue;
 }
 
 .hamburger {
