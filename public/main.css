@@ -28,7 +28,6 @@ body {
     position: absolute;
     visibility: hidden;
     padding-left: 10px;
-    color: blue;
 }
 
 .hamburger {
@@ -515,10 +514,6 @@ footer p {
     .header-div {
         width: 250px;
         top: 500px;
-    }
-
-    .name-and-hamburger {
-        background-color: #9E9CA9;
     }
 
     .contact p {
