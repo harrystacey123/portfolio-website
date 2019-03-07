@@ -503,7 +503,13 @@ footer p {
     }
 
     header {
-        background-image: url('./images/london3.jpeg');
+        background: url('./images/london3.jpeg') no-repeat left center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
     }
 
 }
