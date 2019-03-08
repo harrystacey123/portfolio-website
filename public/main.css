@@ -28,7 +28,6 @@ body {
     position: absolute;
     visibility: hidden;
     padding-left: 10px;
-    color: red;
 }
 
 .hamburger {
@@ -299,7 +298,7 @@ h5 {
 
 .contact p {
     font-size: 18px;
-    line-height: 14px;
+    line-height: 21px;
 }
 
 .contact a {
@@ -509,7 +508,8 @@ footer p {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        width: 600px;
+        height: 700px;
+        width: 100%;
         overflow: hidden;
     }
     .header-div {
