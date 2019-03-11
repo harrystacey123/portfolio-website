@@ -30,6 +30,10 @@ body {
     padding-left: 10px;
 }
 
+.tower-bridge {
+    display: none;
+}
+
 .hamburger {
     position: absolute;
     visibility: hidden;
@@ -502,16 +506,6 @@ footer p {
         font-size: 20px;
     }
 
-    header {
-        background: url('./images/london3.jpeg') no-repeat left center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height: 700px;
-        width: 100%;
-        overflow: hidden;
-    }
     .header-div {
         width: 250px;
         top: 500px;
@@ -537,5 +531,17 @@ footer p {
     }
     .title {
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 516px) {
+    .tower-bridge {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    }
+
+    header {
+        background-image: none;
     }
 }
