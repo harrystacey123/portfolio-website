@@ -302,7 +302,7 @@ h5 {
 
 .contact p {
     font-size: 18px;
-    line-height: 21px;
+    line-height: 50px;
 }
 
 .contact a {
@@ -352,6 +352,16 @@ footer p {
     color: black;
     background:rgba(255, 255, 255, 1);
     margin: 2px;
+}
+
+.contact a {
+    display: flex;
+}
+
+.contact-paragraph {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 50px;
 }
 
 
@@ -539,6 +549,7 @@ footer p {
     display: flex;
     position: absolute;
     z-index: -1;
+    max-width: 100%;
     }
 
     header {
